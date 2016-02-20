@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title>Summary of Papers Read</title>
 	<style>
 		table {
@@ -19,18 +20,45 @@
 		text-align: justify;
 	}
 	table tr:nth-child(even) {
-		background-color: #eee;
+		background-color: #fff;
 	}
 	table tr:nth-child(odd) {
-		background-color: #fff;
+		background-color: #eee;
 	}
 	table th {
 		background-color: black;
 		color: white;
 	}
+	a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+	}
+	a:visited {
+	    color: green;
+	    background-color: transparent;
+	    text-decoration: none;
+	}
+	a:hover {
+ 	   color: red;
+ 	   background-color: transparent;
+ 	   text-decoration: underline;
+	}
+	a:active {
+ 	   color: yellow;
+ 	   background-color: transparent;
+ 	   text-decoration: underline;
+	}
+	h1 {
+		text-align: center;
+	}
+	select {
+		color: blue;
+	}
 	</style>
 </head>
 <body>
+	<h1>SUMMARY OF PAPERS</h1>
 	<table>
 		<tr>
 			<th style="width:200px">Title</th>
@@ -39,6 +67,7 @@
 			<th style="width:50px">Publication Year</th>
 			<th style="width:150px">Citation(Chicago)</th>
 			<th style="width:50px">Link</th>
+			<th style="width:25px">Color Code</th>
 		</tr>
 		<tr>
 			<td>A Tutorial on Spectral Clustering</td>
@@ -48,6 +77,8 @@
 			<td>Von Luxburg, Ulrike. "A tutorial on spectral clustering." Statistics and computing 17, no. 4 (2007): 395-416.</td>
 			<td>
 				<a href="http://arxiv.org/pdf/0711.0189.pdf" target="_blank">Find here</a>
+			</td>
+			<td>
 			</td>
 		</tr>
 		<tr>
@@ -79,6 +110,26 @@
 			<td>Richiardi, Jonas, Sophie Achard, Horst Bunke, and Dimitri Van De Ville. "Machine learning with brain graphs: predictive modeling approaches for functional imaging in systems neuroscience." Signal Processing Magazine, IEEE 30, no. 3 (2013): 58-70.</td>
 			<td>
 				<a href="http://web.stanford.edu/~richiard/papers/2013-Richiardi-IEEESigProcMag.pdf" target="_blank">Find here</a>
+			</td>
+		</tr>
+		<tr>
+			<td>Modularity and community structure in networks</td>
+			<td>This paper defines a new graph matrix called modularity matrix. Spectrum of this matrix is used to detect the community structure in a much efficient way</td>
+			<td>M. E. J. Newman</td>
+			<td>2006</td>
+			<td>Newman, Mark EJ. "Modularity and community structure in networks." Proceedings of the national academy of sciences 103, no. 23 (2006): 8577-8582.</td>
+			<td>
+				<a href="http://www.pnas.org/content/103/23/8577.full" target="_blank">Find here</a>
+			</td>
+		</tr>
+		<tr>
+			<td>The UCLA multimodal connectivity database: a web-based platform for brain connectivity matrix sharing and analysis</td>
+			<td>This paper mentions about the <a href="http://umcd.humanconnectomeproject.org" target="_blank">website</a> for accessing and analysing various structural and functional matrices, which are publically available. To demonstrate the site’s functionality, whole brain functional and structural connectivity matrices are derived from 60 subjects’ (ages 26–45) resting state fMRI (rs-fMRI) and dwMRI data and uploaded to the site. Graph theoretical properties can be applied on the connectivity matrices to infer about global and local properties. Functional connectivity matrices are derived from resting state fMRI, dwMRI, and structural connectivity matrices are derived from DTI, MRI methods.</td>
+			<td>Jesse A. Brown, Jeffrey D. Rudie, Anita Bandrowski, John D. Van Horn and Susan Y. Bookheimer</td>
+			<td>2012</td>
+			<td>Brown, Jesse A., Jeffrey D. Rudie, Anita Bandrowski, John D. Van Horn, and Susan Y. Bookheimer. "The UCLA multimodal connectivity database: a web-based platform for brain connectivity matrix sharing and analysis." Frontiers in neuroinformatics 6 (2012): 28.</td>
+			<td>
+				<a href="https://scholar.google.co.in/scholar?lookup=0&q=The+UCLA+multimodal+connectivity+database:+a+web-based+platform+for+brain+connectivity+matrix+sharing+and+analysis&hl=en&as_sdt=0,5" target="_blank">Find here</a>
 			</td>
 		</tr>
 	</table>
