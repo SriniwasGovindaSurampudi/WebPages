@@ -7,7 +7,7 @@
 		table {
 			width: 100%
 	}
-	tale, th, td {
+	table, th, td {
 		border: 1px solid black;
 		border-collapse: collapse;
 	}
@@ -90,16 +90,6 @@
 
 		</tr>
 		<tr>
-			<td>Network diffusion accurately models the relationship between structural and functional brain connectivity networks</td>
-			<td>This paper hypothesises that diffusion of signals on structural connection of the brain network can predict functinoal connectivity. Considering only one ROI actice at a time, the activation signals reaching its neighbor ROIs, through diffusion, at any given time is hypothesised as the pairwise correlation between these ROIs. These individually and independently active ROI activation diffusions are stacked together and hypothesised that the overall functional correlaton matrix can match at a particular scale.</td>
-			<td>Farras Abdelnour, Henning U. Voss, Ashish Raj</td>
-			<td>2013</td>
-			<td>Abdelnour, Farras, Henning U. Voss, and Ashish Raj. "Network diffusion accurately models the relationship between structural and functional brain connectivity networks." Neuroimage 90 (2014): 335-347.</td>
-			<td>
-				<a href="http://www.sciencedirect.com/science/article/pii/S1053811913012597" target="_blank">Find here</a>
-			</td>
-		</tr>
-		<tr>
 			<td>Machine learning with brain graphs: predictive modeling approaches for functional imaging in systems neuroscience</td>
 			<td>This paper clearly explains the different stages of machine learning with brain graphs. How the time series data are processed from the voxels, how these time series are used to form brain graphs, and then how are statistical machine learning methods applied for predictive modelling. </td>
 			<td>Jonas Richiardi, Sophie Achard, Horst Bunke, and Dimitri Van De Ville</td>
@@ -109,26 +99,7 @@
 				<a href="http://web.stanford.edu/~richiard/papers/2013-Richiardi-IEEESigProcMag.pdf" target="_blank">Find here</a>
 			</td>
 		</tr>
-		<tr>
-			<td>Modularity and community structure in networks</td>
-			<td>This paper defines a new graph matrix called modularity matrix. Spectrum of this matrix is used to detect the community structure in a much efficient way</td>
-			<td>M. E. J. Newman</td>
-			<td>2006</td>
-			<td>Newman, Mark EJ. "Modularity and community structure in networks." Proceedings of the national academy of sciences 103, no. 23 (2006): 8577-8582.</td>
-			<td>
-				<a href="http://www.pnas.org/content/103/23/8577.full" target="_blank">Find here</a>
-			</td>
-		</tr>
-		<tr>
-			<td>The UCLA multimodal connectivity database: a web-based platform for brain connectivity matrix sharing and analysis</td>
-			<td>This paper mentions about the <a href="http://umcd.humanconnectomeproject.org" target="_blank">website</a> for accessing and analysing various structural and functional matrices, which are publically available. To demonstrate the site’s functionality, whole brain functional and structural connectivity matrices are derived from 60 subjects’ (ages 26–45) resting state fMRI (rs-fMRI) and dwMRI data and uploaded to the site. Graph theoretical properties can be applied on the connectivity matrices to infer about global and local properties. Functional connectivity matrices are derived from resting state fMRI, dwMRI, and structural connectivity matrices are derived from DTI, MRI methods.</td>
-			<td>Jesse A. Brown, Jeffrey D. Rudie, Anita Bandrowski, John D. Van Horn and Susan Y. Bookheimer</td>
-			<td>2012</td>
-			<td>Brown, Jesse A., Jeffrey D. Rudie, Anita Bandrowski, John D. Van Horn, and Susan Y. Bookheimer. "The UCLA multimodal connectivity database: a web-based platform for brain connectivity matrix sharing and analysis." Frontiers in neuroinformatics 6 (2012): 28.</td>
-			<td>
-				<a href="https://scholar.google.co.in/scholar?lookup=0&q=The+UCLA+multimodal+connectivity+database:+a+web-based+platform+for+brain+connectivity+matrix+sharing+and+analysis&hl=en&as_sdt=0,5" target="_blank">Find here</a>
-			</td>
-		</tr>
+		
 		<tr>
 			<td>Co-clustering documents and words using Bipartite Spectral Graph Partitioning</td>
 			<td>This paper introduces the idea of clustering two different datasets, which are related to each other and independently clustered well, together. The idea is to form a matrix of size #words by #documents, and then use the adjacency matrix of the induced graph whose entries indicate presence of a word in a document. SVD of a derived matrix using the laplacian of the graph provides clusters of both words and documents simultaneously. This technique is extended for multiple partions also.</td>
@@ -167,6 +138,103 @@
 			<td>Reynolds, Douglas. "Gaussian mixture models." Encyclopedia of Biometrics (2015): 827-832.</td>
 			<td>
 				<a href="http://llwebprod2.ll.mit.edu/mission/cybersec/publications/publication-files/full_papers/0802_Reynolds_Biometrics-GMM.pdf" target="_blank">Find here</a>
+			</td>
+		</tr>
+		<tr>
+			<td>Large-Scale Multi-View Spectral Clustering via Bipartite Graph</td>
+			<td>This paper proposes a novel method of combining multiple views of same set of data points represented as graphs. The algorithm randomly selects some consensus points from data set and assigns a similarity between raw data points and the selected points. This bipartite graph is used for finding the spectrum of the combination of laplacians of multiple views.</td>
+			<td>Yeqing Li, Feiping Nie, Heng Huang, Junzhou Huang</td>
+			<td>2015</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>SimpleMKL</td>
+			<td>This paper introduces a method for solving Multiple Kernels in SVM framework through a weighted 2-norm regularization formulation with an additional constraint on the weights that encourages sparse kernel combinations. The authors extend the method beyond two-class classification to regression and multi-class classification also.</td>
+			<td>Rakotomamonjy, Alain, Francis Bach, Stéphane Canu, and Yves Grandvale</td>
+			<td>2008</td>
+			<td>Rakotomamonjy, Alain, Francis Bach, Stéphane Canu, and Yves Grandvalet. "SimpleMKL." Journal of Machine Learning Research 9 (2008): 2491-2521.</td>
+			<td>
+				<a href="https://hal.archives-ouvertes.fr/hal-00218338/document" target="_blank">Find here</a>
+			</td>
+		</tr>
+		<tr>
+			<td>Diffusion Kernels on Graphs and Other Discrete Structures</td>
+			<td>This paper provides a different meaning for the graph heat kernel, diffusion kernel. They assume a stochastic process on the nodes of the graph. The heat kernel at a scale represents the covariance matrix of the random variables defined at every node of the graph.</td>
+			<td>Risi Imre Kondor, John Lafferty</td>
+			<td>2002</td>
+			<td>Kondor, Risi Imre, and John Lafferty. "Diffusion kernels on graphs and other discrete structures." In Proceedings of the 19th international conference on machine learning, pp. 315-322. 2002.</td>
+			<td>
+				<a href="http://people.cs.uchicago.edu/~risi/papers/diffusion-kernels.pdf" target="_blank">Find here</a>
+			</td>
+		</tr>
+		<tr>
+			<td>A regularization framework for learning from graph data</td>
+			<td></td>
+			<td>Zhou, Dengyong, and Bernhard Schölkopf.</td>
+			<td>2004</td>
+			<td>Zhou, Dengyong, and Bernhard Schölkopf. "A regularization framework for learning from graph data." In ICML workshop on statistical relational learning and Its connections to other fields, vol. 15, pp. 67-68. 2004.</td>
+			<td>
+				<a href="http://131.107.65.14/en-us/um/people/denzho/papers/RFLG.pdf" target="_blank">Find here</a>
+			</td>
+		</tr>
+		<tr>
+			<td>Consistent resting-state networks across healthy subjects</td>
+			<td>In this paper the authors apply tensor-PICA to resting-state fMRI data with the aim of identifying resting coherencies that are consistent across subjects and sessions. They find 10 such networks including DMN, Attention, Auditory processing, Memory, and Executive functions."Ten different and reproducible components are presented in this article. This division into separate systems potentially reflects the organization of the human brain, although we do not suggest that the brain consists of disconnected functional resting networks. In this article, components are defined as spatially independent areas showing coherence in low-frequency fluctuations. This by no means excludes the notion that there are interactions possible between different resting patterns and that the human brain demonstrates properties of a small-world network/"</td>
+			<td>J. S. Damoiseaux, S. A. R. B. Rombouts, F. Barkhof􏰀, P. Scheltens, C. J. Stam, S. M. Smith, and C. F. Beckmann</td>
+			<td>2006</td>
+			<td>Damoiseaux, J. S., S. A. R. B. Rombouts, F. Barkhof, P. Scheltens, C. J. Stam, Stephen M. Smith, and C. F. Beckmann. "Consistent resting-state networks across healthy subjects." Proceedings of the national academy of sciences 103, no. 37 (2006): 13848-13853.</td>
+			<td>
+				<a href="http://www.pnas.org/content/103/37/13848.full" target="_blank">Find here</a>
+			</td>
+		</tr>
+		<tr>
+			<td>Exploring large feature spaces with hierarchical multiple kernel learning</td>
+			<td>This paper assumes that a kernel is decomposable into a large sum of individual bases kernels which can be embedded in a directed acyclic graph. This paper deals with hierarchical multiple kernel combination.</td>
+			<td>Francis Bach</td>
+			<td>2009</td>
+			<td>Bach, Francis R. "Exploring large feature spaces with hierarchical multiple kernel learning." In Advances in neural information processing systems, pp. 105-112. 2009.</td>
+			<td>
+				<a href="http://papers.nips.cc/paper/3418-exploring-large-feature-spaces-with-hierarchical-multiple-kernel-learning.pdf" target="_blank">Find here</a>
+			</td>
+		</tr>
+		<tr>
+			<td>More Generality in Efficient Multiple Kernel Learning</td>
+			<td></td>
+			<td></td>
+			<td>2009</td>
+			<td>
+				
+			</td>
+		</tr>
+		<tr>
+			<td>Combining Graph Laplacians for Semi–Supervised Learning</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>
+				<a href="http://machinelearning.wustl.edu/mlpapers/paper_files/NIPS2005_818.pdf" target="_blank">Find here</a>
+			</td>
+		</tr>
+		<tr>
+			<td>Learning Convex Combinations of Continuously Parameterized Basic Kernels</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>
+				<a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.329.9024&rep=rep1&type=pdf" target="_blank">Find here</a>
+			</td>
+		</tr>
+		<tr>
+			<td>Learning the Kernel Function via Regularization</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>
+				<a href="http://www.jmlr.org/papers/volume6/micchelli05a/micchelli05a.pdf" target="_blank">Find here</a>
 			</td>
 		</tr>
 	</table>

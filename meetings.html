@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>meetings</title>
-	<style >
+	<title>weekly_discussions</title>
+	<style>
 		table{
 			width: 100%
 	}
-		tale, th, td {
+		table, th, td {
+		font-family:Times;
 		border: 1px solid black;
 		border-collapse: collapse;
 	}
@@ -63,10 +64,107 @@
 			<th style="width:300px">Progress</th>
 		</tr>
 		<tr>
-			<td>20 Feb 2016</td>
-			<td>4pm to 5pm</td>
-			<td>1. co-clustering algorithms; SC and FC are two views to get better clusters. These clusters are used to reduce the number of scales for diffusion on graph, 2. try fitting GMMs on the combined graph representation,</td>
-			<td></td>
+			<td>1 Sep. 2016</td>
+			<td>4.15 pm to 6.00 pm</td>
+			<td>
+				<dl>
+					<dt><b>Time Line</b></dt>
+					<dd>- mid Sep to finish all experiments for first methods paper</dd>
+					<dt><b>Publishing places</b></dt>
+					<dd>
+						<ul>
+							<li>Scientific Reports, impact factor = 6</li>
+							<li>NeuroImage, impact factor = 7+</li>
+							<li>PNAS</li>
+						</ul>
+					</dd>
+					<dt><b>Set of experiments for first paper</b></dt>
+					<dd>
+						<ul>
+							<li>look at ashish raj's paper and figure out the type and number of figures, and tables</li>
+							<li>decide by 3 Sep set of experiments</li>
+							<li>PC vs #scales, cross-validation</li>
+							<li>optimizing the parameters</li>
+							<li>inter-hemispheric connectivity to be predicted by FC_predicted.</li>
+							<li>network plots at multiple scales</li>
+						</ul>
+					</dd>
+					<dt><b>Applications (for future)</b></dt>
+					<dd>
+						<ul>
+							<li>Spatial frequencies of brain graphs vs temporal frequencies of fMRI signals. <br> Nodes observed individually, how do these two frequencies vary?</li>
+							<li>joint community detection among various subjects, multiple mdoes of data (SC, FC, etc).</li>
+							<li>lesion study, age study</li>
+						</ul>
+					</dd>
+					<dt><b>data</b></dt>
+					<dd>- Human Connectome Project, 1000 subjects, to pre-process</dd>
+				</dl>
+			</td>
+			<td>By 3 Sep we will be deciding the set of experiments</td>
+		</tr>
+		<tr>
+			<td>3 Sep. 2016</td>
+			<td>3.30 pm to 4.30 pm</td>
+			<td>
+				<dl>
+					<dt><b>Experiment Sets</b></dt>
+					<dd>
+						@Govinda
+						<ul>
+							<li>make good visualzation of the process. <br> flow chart expected.</li>
+							<li>observe variance in PC w.r.t<br> eigen-value to calculate scales,<br># scales, <br># samples required for learning</li>
+							<li>cross-validation for robustness</li>
+						</ul>
+
+						@Shruti
+						<ul>
+							<li>compare with non-linear model</li>
+						</ul>
+
+						@Govinda and Shruti
+						<ul>
+							<li>draw neat visualizations of the networks</li>
+						</ul>
+					</dd>
+				</dl>
+			</td>
+			<td>
+				Slides uploaded at 
+				<a href="https://drive.google.com/open?id=0B1upsT86mAPTYi1pUXIwaFNNNFk" target="_blank">here</a>
+				<br>
+				uploaded files are
+				<ul>
+					<li>avg_sc_fc_pred.png</li>
+					<li>brain_net_visualizations.zip</li>
+					<li>hyperparameters.pdf</li>
+				</ul>
+
+			</td>
+		</tr>
+		<tr>
+			<td>18 Sep. 2016</td>
+			<td>3.30 pm to 6.00 pm</td>
+			<td>
+				<dl>
+					<dt><b> Interpreting π's </b></dt>
+					<dd>
+						π's have almost full rank, i.e. if num_regions = 68, then rank is 67.
+						<br> There are two views, but none has a strong support from cognition point of view.
+						<ul>
+							<li>A column of π can be interpreted as a pattern of co-activation of regions. Every column of π is an independent co-activation pattern. But this meaning as 'co-activations' has to be well understood.
+							<br> (One link - modulation)</li>
+							<li>According to Ashish Raj's paper, they call a column as initial configuaraion of regional activations. For jth column only region j is active. Hence, is this meaning is extended, jth column of π is a new representation of region j, but this representation is independent but not orthogonal!</li>
+						</ul>
+					</dd>
+					<dt><b>community detection</b></dt>
+					<dd>before understanding π's well, to get some initial results, communities found at every scale can be studied. applied louvian community detection algorithm on FC_i, FC at each scale and found communities.</dd>
+					<dt><b>Data collection for further projects</b></dt>
+					<dd>1000 data samples need to be collected from Human Cnnectome Project</dd>
+					<dt><b>Deadline for this paper submission</b>/dt>
+					<dd>to boost up speed, it is tentative to finish up this paper by 2nd October, before Dussera holiday.</dd>
+				</dl>
+			</td>
 		</tr>
 	</table>
 </body>
