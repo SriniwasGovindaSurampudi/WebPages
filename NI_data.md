@@ -34,3 +34,6 @@ This website contains information about different **neuroimaging data** availabl
   [2]: https://www.google.co.in/
   [3]: https://github.com/jmcmanus/pagedown-extra "Pagedown Extra"
  
+$$
+\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
+$$
